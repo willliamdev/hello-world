@@ -6,6 +6,10 @@
   --gray: #c6c6c6;
 }
 
+html {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +17,7 @@
 }
 
 body {
+  font-size: 1.5rem;
   background-color: var(--background);
   color: #F4F4F8;
   font-family: Arial, Helvetica, sans-serif;
@@ -20,23 +25,12 @@ body {
   height: 100vh;
 }
 
-div.container {
+body .container {
   margin: auto;
-  width: min(80%, 900px);
+  width: min(80%, 1200px);
   height: 100%;
-}
-
-#home {
-  height: 100%;
-  width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-
-}
-
-h1 {
-  margin: 10px 0 0px;
 }
 
 .monospace-font {
@@ -51,16 +45,27 @@ h1 {
 
 a {
   color: inherit;
-
 }
 
 a:hover {
   color: var(--blue);
-
 }
 
 footer {
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid var(--gray);
+  border-radius: 12px 12px 0 0;
+  background-color: #1f1f22;
+
+}
+
+
+/* desktop
+
+*/
+@media (min-width: 700px) {
+  html {
+    font-size: 15px
+  }
+
 }
